@@ -510,9 +510,7 @@ img {
 }
 
 .title-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: block;
 }
 
 .title-list .item:not(:nth-child(4n)) {
@@ -520,7 +518,19 @@ img {
 }
 
 .title-list .item {
-  width: 270px;
+  max-width: 100%;
+  max-height: 226px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.chart-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .service {

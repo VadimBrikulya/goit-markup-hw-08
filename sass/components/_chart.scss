@@ -13,11 +13,21 @@
 }
 
 .title-list {
+  display: block;
+}
+
+.title-list .item:not(:nth-child(4n)) {
+  margin-right: 30px;
+}
+
+.title-list .item {
+  max-width: 100%;
+  max-height: 226px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.chart-container {
   display: flex;
-  & .item:not(:nth-child(4n)) {
-    margin-right: 30px;
-  }
-  & .item {
-    width: 270px;
-  }
+  justify-content: center;
 }
