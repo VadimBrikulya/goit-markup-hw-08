@@ -17,8 +17,8 @@
 }
 
 .hero__container-button {
-  display: block;
-  text-align: center;
+  display: flex;
+  justify-content: center;
   margin: 10px 32px;
   font-family: var(--accent-color);
 }
