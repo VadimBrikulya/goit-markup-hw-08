@@ -1,0 +1,26 @@
+.header__email-icon,
+.header__tel-icon {
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+.header__address-list {
+  display: flex;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+.header__tel,
+.header__mail {
+  display: flex;
+  align-items: center;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.142;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  color: #757575;
+  transition: 500ms;
+  margin-left: 50px;
+  margin-right: auto;
+}

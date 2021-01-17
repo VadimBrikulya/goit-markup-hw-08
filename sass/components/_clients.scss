@@ -1,0 +1,37 @@
+.client {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  &-list {
+    display: flex;
+    justify-content: space-between;
+  }
+  &-icon {
+    fill: currentColor;
+  }
+}
+
+.title-box {
+  margin-bottom: 50px;
+  color: var(--primary-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+}
+
+.client-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  height: 90px;
+  color: var(--logo-client);
+  border: 1px solid var(--logo-client);
+  border-radius: 4px;
+  transition: 500ms;
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+    border: 1px solid var(--accent-color);
+  }
+}

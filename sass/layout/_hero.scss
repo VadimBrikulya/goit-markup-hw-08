@@ -1,0 +1,38 @@
+// .hero {
+//   background-color: #2f303a;
+//   max-width: 1600px;
+//   height: 600px;
+
+//   margin-left: auto;
+//   margin-right: auto;
+//   padding-top: 200px;
+//   padding-bottom: 200px;
+
+//   background-image: linear-gradient(
+//       var(--gradient-color),
+//       var(--gradient-color)
+//     ),
+//     url("../images/banner.jpg");
+//   background-repeat: no-repeat;
+//   background-size: cover;
+//   background-position: center;
+//   & .hero__title {
+//     width: 696px;
+//     margin-left: auto;
+//     margin-right: auto;
+//     font-weight: 900;
+//     font-size: 44px;
+//     line-height: 1.363;
+//     letter-spacing: 0.06em;
+//     text-transform: uppercase;
+//     color: #ffffff;
+//     text-align: center;
+//   }
+// }
+
+// .hero__container-button {
+//   display: block;
+//   text-align: center;
+//   margin-top: 30px;
+//   font-family: var(--accent-color);
+// }

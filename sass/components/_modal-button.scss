@@ -1,0 +1,17 @@
+.modal-btn {
+  min-width: 200px;
+  min-height: 50px;
+  font-family: var(--accent-color);
+  font-weight: 700;
+  font-size: 16px;
+  outline: none;
+  line-height: 1.187;
+  color: #ffffff;
+  letter-spacing: 0.06em;
+  padding: 10px 32px;
+  background-color: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+}
