@@ -36,6 +36,9 @@
 }
 
 @media screen and (min-width: 1200px) {
+  .indent_section {
+    padding-top: 294px;
+  }
   .title-list .item {
     width: calc((100% - 4 * 30px) / 4);
   }
