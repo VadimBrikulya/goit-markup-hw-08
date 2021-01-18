@@ -1,22 +1,3 @@
-.desription {
-  margin-top: 10px;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 1.714;
-  letter-spacing: 0.03em;
-  color: #757575;
-  &-item {
-    text-align: center;
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 1.142;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: var(--secondary-color);
-    margin-bottom: 10px;
-  }
-}
-
 .thumb-container {
   display: flex;
   align-items: center;
@@ -30,15 +11,32 @@
 .indent_section {
   padding-top: 178px;
 }
+
 .title-list {
-  display: flex;
-  flex-direction: column;
-}
-.title-list .item {
-  margin-bottom: 30px;
-  min-height: 226px;
+  & .item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+  & .item {
+    max-width: 450px;
+  }
 }
 
-// .title-list .item:not(:nth-child(4n)) {
-//   margin-right: 30px;
-// }
+@media screen and (min-width: 768px) {
+  .title-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+    & .item {
+      width: calc((100% - 2 * 30px) / 2);
+      margin-left: 15px;
+      margin-right: 15px;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .title-list .item {
+    width: calc((100% - 4 * 30px) / 4);
+  }
+}
