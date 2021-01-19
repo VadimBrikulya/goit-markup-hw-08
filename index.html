@@ -246,12 +246,18 @@
             </div>
         </section> -->
         <!--Our team-->
-        <!-- <section class="our-team">
+        <section class="our-team container">
             <h2 class="our-team-title">Наша команда</h2>
             <ul class="name list">
                 
-                        <li class="name-team"> 
-                            <img class="image" src="./images/our-team/Игорь Демьяненко.jpg" alt="Игорь Демьяненко" width="270" height="260" />
+                    <li class="name-team ">
+                        <picture class="team-picture">
+                            <source srcset="./images/our-team/img1-desk-1x.jpg 1x, ./images/our-team/img1-desk-2x.jpg 2x" 
+                            media="(min-width: 1200x)">
+                            <source srcset="./images/our-team/img1-tablet-1х.jpg 1x, ./images/our-team/img1-tablet-2х.jpg 2x" 
+                            media="(min-width: 768px)">  
+                            <img class="image" src="./images/our-team/img1-1х.jpg" alt="Игорь Демьяненко" />
+                        </picture>
                             <h3 class="name-list">Игорь Демьяненко</h3>
                             <p class="list-position" lang="en">Product Designer</p>
 
@@ -291,7 +297,13 @@
                         </li>
                         
                         <li class="name-team">
-                            <img class="image" src="./images/our-team/Ольга Репина.jpg" alt="Ольга Репина" width="270" height="260" />
+                            <picture class="team-picture">
+                                <source srcset="./images/our-team/img2-desk-1х.jpg 1x, ./images/our-team/img2-desk-2x.jpg 2x"
+                                    media="(min-width: 1200x)">
+                                <source srcset="./images/our-team/img2-tablet-1x.jpg 1x, ./images/our-team/img2-tablet-2x.jpg 2x"
+                                    media="(min-width: 768px)">
+                                <img class="image" src="./images/our-team/img2-1х.jpg" alt="Ольга Репина" />
+                            </picture>
                             <h3 class="name-list">Ольга Репина</h3>
                             <p class="list-position" lang="en">Frontend Developer</p>
                             <div class="social-box">
@@ -411,7 +423,7 @@
     
         </section>
     
-                <section class="section client">
+                 <!-- <section class="section client">
                     <div class="container">
                         <h2 class="title-box">Постоянные клиенты</h2>
                         <ul class="client-list list">
