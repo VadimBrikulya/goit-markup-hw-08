@@ -1,9 +1,11 @@
+.footer-container {
+  display: block;
+  text-align: center;
+  margin-bottom: 60px;
+}
 .footer-social {
-  // display: block;
-  // width: 206px;
-  // margin-left: 70px;
-  // justify-content: center;
-  // align-items: center;
+  display: block;
+
   &-list {
     display: flex;
     justify-content: center;
@@ -30,6 +32,8 @@
 }
 
 .footer-social-box {
+  display: block;
+  text-align: center;
   margin-bottom: 20px;
   color: #fff;
   font-size: 14px;
