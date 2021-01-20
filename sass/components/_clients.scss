@@ -3,7 +3,11 @@
   padding-bottom: 94px;
   &-list {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    margin-top: -15px;
+    margin-bottom: -15px;
   }
   &-icon {
     fill: currentColor;
@@ -23,7 +27,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 170px;
+
   height: 90px;
   color: var(--logo-client);
   border: 1px solid var(--logo-client);
@@ -33,5 +37,37 @@
   &:focus {
     color: var(--accent-color);
     border: 1px solid var(--accent-color);
+  }
+}
+// @media screen and (max-width: 1199px) {
+//   .client-list {
+//     margin-top: -15px;
+//     margin-bottom: -15px;
+//   }
+
+//   .client-item {
+//     margin-right: 15px;
+//     margin-left: 15px;
+//     margin-top: 15px;
+//     margin-bottom: 15px;
+//     width: calc((100% - 2 * 30px) / 2);
+//   }
+// }
+
+@media screen and (min-width: 768px) {
+  .client-item {
+    width: calc((100% - 3 * 30px) / 3);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .client {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    outline: 2px solid red;
+  }
+
+  .client-item {
+    width: calc((100% - 6 * 30px) / 6);
   }
 }
