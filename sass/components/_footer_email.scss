@@ -15,50 +15,83 @@
     text-transform: uppercase;
   }
 }
+@media screen and (min-width: 768px) {
+  .footer-form-box {
+    display: flex;
+    margin-top: 60px;
+    // width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-box {
+    display: flex;
+    align-items: baseline;
+  }
+  .footer-form-field {
+    margin-right: 12px;
+    width: 358px;
+  }
 
-.footer-form-input {
-  width: 358px;
-  height: 50px;
-  padding-left: 16px;
-  color: rgba(255, 255, 255, 0.6);
-  background-color: transparent;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  border-radius: 4px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  &::placeholder {
+  //   .footer-form-input {
+  //     width: 358px;
+  //   }
+  // }
+  // .footer__address-side {
+  //   margin-right: 85px;
+  // }
+
+  // .footer__right-side {
+  //   display: flex;
+  //   align-items: baseline;
+  // }
+
+  // .footer-social {
+  //   margin-right: 93px;
+  // }
+
+  .footer-form-input {
+    // display: inline-block;
+    width: 100%;
+    height: 50px;
+    padding-left: 16px;
     color: rgba(255, 255, 255, 0.6);
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    &::placeholder {
+      color: rgba(255, 255, 255, 0.6);
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 1.25;
+      letter-spacing: 0.03em;
+    }
+    &:focus {
+      outline: none;
+    }
+  }
+
+  // .footer-form-box {
+  //   display: flex;
+  // }
+
+  .footer-form-button {
+    // display: flex;
+    padding: 10px 28px;
+    color: #fff;
     font-size: 16px;
-    font-weight: 400;
-    line-height: 1.25;
-    letter-spacing: 0.03em;
+    font-weight: 700;
+    line-height: 1.875;
+    letter-spacing: 0.06em;
+    background-color: var(--accent-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
   }
-  &:focus {
-    outline: none;
+
+  .footer-form-icon {
+    margin-left: 10px;
+    fill: #fff;
   }
-}
-
-.footer-form-box {
-  display: flex;
-}
-
-.footer-form-button {
-  display: flex;
-  align-items: center;
-  align-self: flex-end;
-  padding: 10px 28px;
-  color: #fff;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 1.875;
-  letter-spacing: 0.06em;
-  background-color: var(--accent-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  border: none;
-  cursor: pointer;
-}
-
-.footer-form-icon {
-  margin-left: 10px;
-  fill: #fff;
 }
