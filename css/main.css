@@ -937,12 +937,12 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  min-width: 200px;
-  margin-top: 20px;
   margin-left: auto;
   margin-right: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 200px;
+  margin-top: 20px;
   color: #fff;
   font-size: 16px;
   font-weight: 700;
@@ -957,14 +957,10 @@ img {
 }
 
 .footer-form-input {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   height: 50px;
   padding-top: 0;
   padding-bottom: 0;
   padding-left: 16px;
-  padding-right: 0;
   color: rgba(255, 255, 255, 0.6);
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -1050,6 +1046,23 @@ img {
 }
 
 @media screen and (min-width: 1200px) {
+  .footer-form-button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-left: 0;
+    margin-right: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    min-width: 200px;
+    margin-top: 20px;
+  }
   .box-container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1059,6 +1072,9 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
   }
   .footer-form-box {
     display: -webkit-box;
@@ -1070,16 +1086,6 @@ img {
             flex-direction: row;
     margin-top: 60px;
   }
-  .footer-form-box {
-    outline: 2px solid teal;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  .footer-social {
-    padding-top: 5px;
-    padding-left: 162px;
-  }
   .footer-form-input {
     height: 50px;
     min-width: 358px;
@@ -1088,6 +1094,10 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+  .footer-info {
+    display: inline-block;
+    text-align: left;
   }
 }
 
