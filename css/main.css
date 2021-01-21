@@ -906,10 +906,6 @@ img {
   margin-top: 60px;
 }
 
-.footer-form {
-  margin-left: auto;
-}
-
 .footer-form-field {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -961,6 +957,9 @@ img {
 }
 
 .footer-form-input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   height: 50px;
   padding-top: 0;
   padding-bottom: 0;
@@ -1060,30 +1059,30 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
   }
   .footer-form-box {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-top: 0;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-top: 60px;
+  }
+  .footer-form-box {
+    outline: 2px solid teal;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
   .footer-social {
     padding-top: 5px;
     padding-left: 162px;
   }
   .footer-form-input {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     height: 50px;
-    min-width: 450px;
-    padding-top: 0;
-    padding-bottom: 0;
-    padding-left: 16px;
-    padding-right: 0;
+    min-width: 358px;
   }
   .footer-social-box {
     display: -webkit-box;
@@ -1219,7 +1218,8 @@ img {
   display: flex;
 }
 
-.footer-box {
+.contact-form {
+  background-color: #2f303a;
   padding-top: 60px;
 }
 /*# sourceMappingURL=main.css.map */
