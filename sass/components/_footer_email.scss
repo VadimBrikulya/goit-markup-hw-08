@@ -97,14 +97,18 @@
 }
 
 @media screen and (min-width: 1200px) {
+  .box-container {
+    display: flex;
+  }
   .footer-leftside {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
+    
   }
   .footer-form-box {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    // align-items: center;
+    // justify-content: center;
     margin-top: 0;
   }
   .footer-social {
@@ -112,6 +116,7 @@
     padding-left: 162px;
   }
   .footer-form-input {
+    display: flex;
     height: 50px;
     min-width: 450px;
     padding-top: 0;
@@ -119,4 +124,7 @@
     padding-left: 16px;
     padding-right: 0;
   }
-}
+  .footer-social-box {
+    display: flex;
+  }
+  
