@@ -75,17 +75,29 @@
 @media screen and (min-width: 768px) {
   .footer-leftside {
     display: flex;
-    flex-direction: column;
   }
-  .footer-rightside {
+  .footer-form-box {
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .footer-form-input {
+    height: 50px;
+    min-width: 450px;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 16px;
+    padding-right: 0;
+  }
+  .footer.social {
+    align-items: right;
   }
 }
 @media screen and (min-width: 1200px) {
   .footer-box {
     display: flex;
-    align-items: baseline;
+    align-items: center;
+    justify-content: center;
   }
   .footer-form-field {
     margin-right: 12px;
