@@ -142,10 +142,9 @@
 }
 
 @media screen and (min-width: 1200px) {
-  .footer-leftside {
+  .footer-logo {
     display: flex;
-
-    justify-content: flex-start;
+    margin-top: 0;
   }
   .footer-container {
     margin-bottom: 0;
@@ -156,7 +155,6 @@
     padding-left: 70px;
   }
   .footer-form {
-    outline: 1px solid red;
     margin-left: 100px;
   }
   .footer-form-label {
@@ -178,9 +176,6 @@
     display: flex;
   }
 
-  .footer-rightside {
-    outline: 6px solid red;
-  }
   .footer-form-box {
     display: flex;
     flex-direction: row;
