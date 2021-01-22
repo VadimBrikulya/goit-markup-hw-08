@@ -1,9 +1,11 @@
 .header {
   display: flex;
+  position: relative;
   justify-content: space-between;
+
   & .header__container {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     &-address {
       display: none;
