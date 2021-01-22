@@ -4,6 +4,7 @@
     justify-content: space-between;
     & .header__container {
       display: flex;
+      position: relative;
       justify-content: center;
       align-items: center;
       &-address {
