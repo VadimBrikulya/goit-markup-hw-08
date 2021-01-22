@@ -622,6 +622,7 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    margin-top: 0;
     padding-top: 32px;
     padding-bottom: 32px;
   }
@@ -1411,11 +1412,6 @@ img {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-  }
-  .header .header__container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
   }
   .header .header__container-address {
     display: -webkit-box;
