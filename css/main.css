@@ -64,6 +64,10 @@ img {
   width: 100%;
 }
 
+.menu-nav {
+  display: none;
+}
+
 @media screen and (min-width: 768px) {
   .menu-nav {
     display: -webkit-box;
@@ -1289,6 +1293,7 @@ img {
 }
 
 .container {
+  outline: 1px solid red;
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;
