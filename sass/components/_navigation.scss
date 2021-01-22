@@ -1,6 +1,6 @@
-.navigation__menu {
-  display: flex;
-}
+// .navigation__menu {
+//   display: flex;
+// }
 
 .navigation__item:not(:last-child) {
   margin-right: 50px;
@@ -44,5 +44,107 @@
     background-color: var(--accent-color);
     border-radius: 2px;
     transition: 300ms;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .navigation__menu {
+    display: flex;
+  }
+
+  .navigation__item:not(:last-child) {
+    margin-right: 50px;
+  }
+
+  .navigation__container-item {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+  .navigation__list-link:hover,
+  .navigation__list-link:focus,
+  .header__mail:hover,
+  .header__mail:focus,
+  .header__tel:hover,
+  .header__tel:focus {
+    color: var(--accent-color);
+  }
+
+  .navigation__list-link {
+    position: relative;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.142;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    color: var(--secondary-color);
+    padding-top: 32px;
+    padding-bottom: 32px;
+    transition: 300ms;
+    .navigation__menu &.current {
+      color: var(--accent-color);
+    }
+    .navigation__menu &.current::after {
+      position: absolute;
+      content: "";
+      display: block;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 4px;
+      background-color: var(--accent-color);
+      border-radius: 2px;
+      transition: 300ms;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .navigation__menu {
+    display: flex;
+  }
+
+  .navigation__item:not(:last-child) {
+    margin-right: 50px;
+  }
+
+  .navigation__container-item {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+  .navigation__list-link:hover,
+  .navigation__list-link:focus,
+  .header__mail:hover,
+  .header__mail:focus,
+  .header__tel:hover,
+  .header__tel:focus {
+    color: var(--accent-color);
+  }
+
+  .navigation__list-link {
+    position: relative;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.142;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    color: var(--secondary-color);
+    padding-top: 32px;
+    padding-bottom: 32px;
+    transition: 300ms;
+    .navigation__menu &.current {
+      color: var(--accent-color);
+    }
+    .navigation__menu &.current::after {
+      position: absolute;
+      content: "";
+      display: block;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 4px;
+      background-color: var(--accent-color);
+      border-radius: 2px;
+      transition: 300ms;
+    }
   }
 }
