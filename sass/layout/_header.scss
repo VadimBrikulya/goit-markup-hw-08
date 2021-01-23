@@ -2,37 +2,33 @@
   display: flex;
   position: relative;
   justify-content: space-between;
-
-  & .header__container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    &-address {
-      display: none;
-    }
-  }
+}
+.header__address {
+  display: none;
+}
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 @media screen and (min-width: 768px) {
   .header {
     display: flex;
     justify-content: space-between;
-    & .header__container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      &-address {
-        display: flex;
-      }
-    }
+  }
+  .header__address {
+    display: block;
+  }
+  .header__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 @media screen and (min-width: 1200px) {
   .header {
     display: flex;
     justify-content: space-between;
-    & .header__container-address {
-      display: flex;
-    }
   }
 }

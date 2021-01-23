@@ -64,6 +64,12 @@ img {
   width: 100%;
 }
 
+.menu-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .button-box {
   display: block;
   padding-top: 12px;
@@ -92,9 +98,6 @@ img {
 }
 
 @media screen and (min-width: 768px) {
-  .button-box {
-    display: none;
-  }
   .menu-nav {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -405,27 +408,6 @@ img {
   margin-right: 50px;
 }
 
-.navigation_480_mobil-form {
-  background-color: #727272;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  position: absolute;
-  top: 100%;
-  width: 100%;
-  left: 0;
-  height: 200px;
-}
-
-.navigation__container-item {
-  display: none;
-  padding-top: 32px;
-  padding-bottom: 32px;
-}
-
 .navigation__list-link:hover,
 .navigation__list-link:focus,
 .header__mail:hover,
@@ -476,11 +458,6 @@ img {
   .navigation__item:not(:last-child) {
     margin-right: 50px;
   }
-  .navigation__container-item {
-    display: block;
-    padding-top: 32px;
-    padding-bottom: 32px;
-  }
   .navigation__list-link:hover,
   .navigation__list-link:focus,
   .header__mail:hover,
@@ -528,10 +505,6 @@ img {
   }
   .navigation__item:not(:last-child) {
     margin-right: 50px;
-  }
-  .navigation__container-item {
-    padding-top: 32px;
-    padding-bottom: 32px;
   }
   .navigation__list-link:hover,
   .navigation__list-link:focus,
@@ -1448,7 +1421,11 @@ img {
           justify-content: space-between;
 }
 
-.header .header__container {
+.header__address {
+  display: none;
+}
+
+.header__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1460,10 +1437,6 @@ img {
           align-items: center;
 }
 
-.header .header__container-address {
-  display: none;
-}
-
 @media screen and (min-width: 768px) {
   .header {
     display: -webkit-box;
@@ -1473,7 +1446,10 @@ img {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
-  .header .header__container {
+  .header__address {
+    display: block;
+  }
+  .header__container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1483,11 +1459,6 @@ img {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-  }
-  .header .header__container-address {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
   }
 }
 
@@ -1499,11 +1470,6 @@ img {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-  }
-  .header .header__container-address {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
   }
 }
 

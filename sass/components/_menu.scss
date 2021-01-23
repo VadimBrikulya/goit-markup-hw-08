@@ -1,6 +1,6 @@
-// .menu-nav {
-//   display: flex;
-// }
+.menu-nav {
+  display: flex;
+}
 
 .button-box {
   display: block;
@@ -23,9 +23,6 @@
   display: none;
 }
 @media screen and (min-width: 768px) {
-  .button-box {
-    display: none;
-  }
   .menu-nav {
     display: flex;
   }
