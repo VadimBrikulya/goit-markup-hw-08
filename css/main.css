@@ -93,7 +93,6 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 12px;
 }
 
 .menu-button {
@@ -1470,6 +1469,8 @@ img {
   }
   .header__address {
     display: block;
+    padding-bottom: 20px;
+    padding-top: 20px;
   }
 }
 
@@ -1483,6 +1484,8 @@ img {
             justify-content: space-between;
   }
   .header__address {
+    padding-bottom: 32px;
+    padding-top: 32px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
