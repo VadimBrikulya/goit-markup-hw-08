@@ -4,7 +4,8 @@
   justify-content: space-between;
 }
 .header__address {
-  display: none;
+  outline: 1px solid red;
+  display: flex;
 }
 .header__container {
   display: flex;
@@ -30,5 +31,8 @@
   .header {
     display: flex;
     justify-content: space-between;
+  }
+  .header__address {
+    display: flex;
   }
 }

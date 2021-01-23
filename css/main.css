@@ -64,14 +64,35 @@ img {
   width: 100%;
 }
 
-.menu-container {
+.menu-container.is-open {
+  display: block;
+  text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+  .menu-container {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #acacac;
+    padding: 20px;
+    font-size: 20px;
+    height: 200px;
+  }
+}
+
+.nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-.button-box {
-  display: block;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding-top: 12px;
 }
 
@@ -83,6 +104,12 @@ img {
   padding: 0;
   border: none;
   background: transparent;
+}
+
+@media screen and (min-width: 767px) {
+  .menu-button {
+    display: none;
+  }
 }
 
 .menu-button .icon-close {
@@ -98,7 +125,7 @@ img {
 }
 
 @media screen and (min-width: 768px) {
-  .menu-nav {
+  .menu-container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -106,7 +133,7 @@ img {
 }
 
 @media screen and (min-width: 1200px) {
-  .menu-nav {
+  .menu-container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -616,70 +643,56 @@ img {
   }
 }
 
-@media screen and (min-width: 768px) {
-  .header__email-icon,
-  .header__tel-icon {
-    margin-right: 10px;
-    fill: currentColor;
-  }
-  .header__address-list {
-    margin-top: 21px;
-  }
-  .header__tel,
-  .header__mail {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.142;
-    letter-spacing: 0.02em;
-    text-decoration: none;
-    color: #757575;
-    -webkit-transition: 500ms;
-    transition: 500ms;
-    margin-left: 50px;
-    padding-bottom: 10px;
-  }
+.header__email-icon,
+.header__tel-icon {
+  margin-right: 10px;
+  fill: currentColor;
 }
 
-@media screen and (min-width: 1200px) {
-  .header__email-icon,
-  .header__tel-icon {
-    margin-right: 10px;
-    fill: currentColor;
-  }
-  .header__address-list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin-top: 32px;
-    margin-bottom: 0;
-  }
-  .header__tel,
-  .header__mail {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.142;
-    letter-spacing: 0.02em;
-    text-decoration: none;
-    color: #757575;
-    -webkit-transition: 500ms;
-    transition: 500ms;
-    margin-left: 50px;
-    margin-right: auto;
-  }
+.header__tel,
+.header__mail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.142;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  color: #757575;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+  margin-left: 50px;
+}
+
+.header__email-icon,
+.header__tel-icon {
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+.header__tel,
+.header__mail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.142;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  color: #757575;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+  margin-bottom: 10px;
 }
 
 .thumb-container {
@@ -1422,7 +1435,10 @@ img {
 }
 
 .header__address {
-  display: none;
+  outline: 1px solid red;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .header__container {
@@ -1470,6 +1486,11 @@ img {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+  }
+  .header__address {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 

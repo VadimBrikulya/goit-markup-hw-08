@@ -1,57 +1,45 @@
-@media screen and (min-width: 768px) {
-  .header__email-icon,
-  .header__tel-icon {
-    margin-right: 10px;
-    fill: currentColor;
-  }
-
-  .header__address-list {
-    margin-top: 21px;
-    // margin-bottom: 32px;
-  }
-  .header__tel,
-  .header__mail {
-    display: flex;
-    align-items: center;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.142;
-    letter-spacing: 0.02em;
-    text-decoration: none;
-    color: #757575;
-    transition: 500ms;
-    margin-left: 50px;
-    // margin-right: auto;
-    padding-bottom: 10px;
-  }
+.header__email-icon,
+.header__tel-icon {
+  margin-right: 10px;
+  fill: currentColor;
 }
-@media screen and (min-width: 1200px) {
-  .header__email-icon,
-  .header__tel-icon {
-    margin-right: 10px;
-    fill: currentColor;
-  }
 
-  .header__address-list {
-    display: flex;
-    // margin-top: 21px;
-    margin-top: 32px;
-    margin-bottom: 0;
-  }
-  .header__tel,
-  .header__mail {
-    display: flex;
-    align-items: center;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.142;
-    letter-spacing: 0.02em;
-    text-decoration: none;
-    color: #757575;
-    transition: 500ms;
-    margin-left: 50px;
-    margin-right: auto;
-  }
+.header__tel,
+.header__mail {
+  display: flex;
+  align-items: center;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.142;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  color: #757575;
+  transition: 500ms;
+  margin-left: 50px;
+  // margin-right: auto;
+  // padding-bottom: 10px;
+}
+
+.header__email-icon,
+.header__tel-icon {
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+.header__tel,
+.header__mail {
+  display: flex;
+  align-items: center;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.142;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  color: #757575;
+  transition: 500ms;
+  // margin-left: 50px;
+  // margin-right: auto;
+  margin-bottom: 10px;
 }
