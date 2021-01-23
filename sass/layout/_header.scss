@@ -4,8 +4,12 @@
   justify-content: space-between;
 }
 .header__address {
-  outline: 1px solid red;
-  display: flex;
+  @media screen and (max-width: 767px) {
+    outline: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 }
 .header__container {
   display: flex;
@@ -15,16 +19,10 @@
 
 @media screen and (min-width: 768px) {
   .header {
-    display: flex;
     justify-content: space-between;
   }
   .header__address {
     display: block;
-  }
-  .header__container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
   }
 }
 @media screen and (min-width: 1200px) {
