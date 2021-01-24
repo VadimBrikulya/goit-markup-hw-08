@@ -1,4 +1,5 @@
 .modal-btn {
+  display: inline-block;
   min-width: 200px;
   min-height: 50px;
   font-family: var(--accent-color);
@@ -6,8 +7,7 @@
   font-size: 16px;
   line-height: 1.187;
   color: #ffffff;
-  letter-spacing: 0.06em;
-  padding: 10px 32px;
+
   background-color: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -19,6 +19,6 @@
 .hero__container-button {
   display: flex;
   justify-content: center;
-  margin: 10px 32px;
+  // margin: 10px 32px;
   font-family: var(--accent-color);
 }

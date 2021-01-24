@@ -738,7 +738,10 @@ img {
 }
 
 .hero {
+  margin-left: auto;
+  margin-right: auto;
   padding-top: 118px;
+  padding-bottom: 118px;
   background-image: -webkit-gradient(linear, left top, left bottom, from(var(--gradient-color)), to(var(--gradient-color))), url("../images/hero/hero-1x.jpg");
   background-image: linear-gradient(var(--gradient-color), var(--gradient-color)), url("../images/hero/hero-1x.jpg");
   background-repeat: no-repeat;
@@ -826,6 +829,8 @@ img {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    padding-top: 6px;
+    padding-bottom: 20px;
   }
 }
 
