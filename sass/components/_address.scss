@@ -8,7 +8,7 @@
 .header__mail {
   display: flex;
   align-items: center;
-  justify-content: center;
+
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -20,6 +20,12 @@
   // margin-left: 50px;
   margin-right: auto;
 }
+@media screen and (max-width: 767px) {
+  .header__tel {
+    justify-content: center;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .header__tel,
   .header__mail {
