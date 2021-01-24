@@ -51,8 +51,8 @@ h6 {
 
 ul,
 ol {
-  margin: 0;
   padding: 0;
+  margin: 0;
 }
 
 p {
@@ -62,12 +62,6 @@ p {
 img {
   display: inline-block;
   width: 100%;
-}
-
-.menu-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 .menu-container.is-open {
@@ -502,6 +496,7 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    margin-top: 0;
   }
   .navigation__item:not(:last-child) {
     margin-right: 50px;
@@ -687,43 +682,19 @@ img {
   color: #757575;
   -webkit-transition: 500ms;
   transition: 500ms;
-  margin-left: 50px;
-}
-
-.header__email-icon,
-.header__tel-icon {
-  margin-right: 10px;
-  fill: currentColor;
-}
-
-.header__tel,
-.header__mail {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.142;
-  letter-spacing: 0.02em;
-  text-decoration: none;
-  color: #757575;
-  -webkit-transition: 500ms;
-  transition: 500ms;
+  margin-right: auto;
 }
 
 @media screen and (min-width: 768px) {
-  .header__tel {
-    margin-top: 10px;
+  .header__tel,
+  .header__mail {
+    margin-left: 50px;
   }
 }
 
-@media screen and (min-width: 1200px) {
-  .header__tel {
-    margin-top: 0px;
+@media screen and (max-width: 1199px) {
+  .header__mail:not(:last-child) {
+    margin-bottom: 10px;
   }
 }
 

@@ -50,6 +50,7 @@
 @media screen and (min-width: 768px) {
   .navigation__menu {
     display: flex;
+    margin-top: 0;
   }
 
   .navigation__item:not(:last-child) {
