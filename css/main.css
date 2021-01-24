@@ -188,6 +188,15 @@ img {
   font-family: var(--accent-color);
 }
 
+@media screen and (max-width: 767px) {
+  .backdrop {
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 93px;
+    padding-bottom: 94px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .backdrop {
     position: fixed;
@@ -1375,7 +1384,7 @@ img {
   background-image: linear-gradient(var(--gradient-color), var(--gradient-color)), url("../images/hero/hero-1x.jpg");
   background-repeat: no-repeat;
   background-position: center top;
-  background-size: 480px 400px;
+  background-size: cover;
 }
 
 .hero__title {

@@ -746,7 +746,7 @@ img {
   background-image: linear-gradient(var(--gradient-color), var(--gradient-color)), url("../images/hero/hero-1x.jpg");
   background-repeat: no-repeat;
   background-position: center top;
-  background-size: 480px 400px;
+  background-size: cover;
 }
 
 .hero__title {
