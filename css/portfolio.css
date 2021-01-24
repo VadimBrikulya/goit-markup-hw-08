@@ -648,7 +648,10 @@ img {
   color: #757575;
   -webkit-transition: 500ms;
   transition: 500ms;
-  margin-bottom: 10px;
+}
+
+.header__tel {
+  margin-top: 10px;
 }
 
 .indent {
