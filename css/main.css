@@ -73,6 +73,7 @@ img {
 
 @media screen and (max-width: 767px) {
   .menu-container {
+    display: none;
     position: absolute;
     top: 101%;
     left: 0;
