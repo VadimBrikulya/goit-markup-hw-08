@@ -21,8 +21,6 @@
 }
 
 .navigation__list-link {
-  display: flex;
-  justify-content: center;
   position: relative;
   font-weight: 500;
   font-size: 14px;
@@ -70,6 +68,7 @@
   }
 
   .navigation__list-link {
+    display: flex;
     position: relative;
     font-weight: 500;
     font-size: 14px;

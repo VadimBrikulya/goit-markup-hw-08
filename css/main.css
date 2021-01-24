@@ -74,7 +74,7 @@ img {
 @media screen and (max-width: 767px) {
   .menu-container {
     position: absolute;
-    top: 100%;
+    top: 101%;
     left: 0;
     width: 100%;
     background-color: white;
@@ -461,12 +461,6 @@ img {
 }
 
 .navigation__list-link {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   position: relative;
   font-weight: 500;
   font-size: 14px;
@@ -516,6 +510,9 @@ img {
     color: var(--accent-color);
   }
   .navigation__list-link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     position: relative;
     font-weight: 500;
     font-size: 14px;
