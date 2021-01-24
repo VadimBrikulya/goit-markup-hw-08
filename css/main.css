@@ -430,10 +430,6 @@ img {
   }
 }
 
-.navigation__item:not(:last-child) {
-  margin-right: 50px;
-}
-
 .navigation__list-link:hover,
 .navigation__list-link:focus,
 .header__mail:hover,
@@ -693,8 +689,16 @@ img {
   transition: 500ms;
 }
 
-.header__tel {
-  margin-top: 10px;
+@media screen and (min-width: 768px) {
+  .header__tel {
+    margin-top: 10px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header__tel {
+    margin-top: 0px;
+  }
 }
 
 .thumb-container {
