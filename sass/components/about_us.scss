@@ -1,11 +1,16 @@
-.service {
-  padding-top: 94px;
-  padding-bottom: 94px;
+@media screen and (max-width: 1199px) {
+  .service {
+    display: none;
+
+    padding-bottom: 94px;
+  }
 }
 
 .about-us-list {
   display: flex;
   justify-content: center;
+  margin-top: 94px;
+  padding-bottom: 94px;
   & .about-us-img:not(:nth-child(3n)) {
     margin-right: 30px;
   }

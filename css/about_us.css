@@ -1,6 +1,8 @@
-.service {
-  padding-top: 94px;
-  padding-bottom: 94px;
+@media screen and (max-width: 1199px) {
+  .service {
+    display: none;
+    padding-bottom: 94px;
+  }
 }
 
 .about-us-list {
@@ -10,6 +12,8 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-top: 94px;
+  padding-bottom: 94px;
 }
 
 .about-us-list .about-us-img:not(:nth-child(3n)) {
