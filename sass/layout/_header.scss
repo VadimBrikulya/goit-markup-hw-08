@@ -28,11 +28,12 @@
 @media screen and (min-width: 1200px) {
   .header {
     display: flex;
-    justify-content: space-between;
+    // justify-content: space-between;
   }
   .header__address {
     padding-bottom: 32px;
     padding-top: 32px;
     display: flex;
+    margin-left: 305px;
   }
 }
