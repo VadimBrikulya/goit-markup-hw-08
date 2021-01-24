@@ -22,6 +22,7 @@
 
 .navigation__list-link {
   display: flex;
+  justify-content: center;
   position: relative;
   font-weight: 500;
   font-size: 14px;
@@ -41,7 +42,7 @@
     display: block;
     left: 0;
     bottom: 0;
-    width: 51px;
+    width: 100%;
     height: 4px;
     background-color: var(--accent-color);
     border-radius: 2px;
@@ -79,15 +80,16 @@
     padding-top: 32px;
     padding-bottom: 32px;
     transition: 300ms;
-    .navigation__menu &.current {
+    js .navigation__menu &.current {
       color: var(--accent-color);
     }
     .navigation__menu &.current::after {
       position: absolute;
       content: "";
       display: block;
+
       left: 0;
-      bottom: 0;
+      bottom: -3px;
       width: 100%;
       height: 4px;
       background-color: var(--accent-color);
@@ -134,7 +136,7 @@
       content: "";
       display: block;
       left: 0;
-      bottom: 0;
+      bottom: -2px;
       width: 100%;
       height: 4px;
       background-color: var(--accent-color);
