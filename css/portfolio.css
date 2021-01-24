@@ -750,9 +750,8 @@ img {
 }
 
 .indent {
-  border-top: 1px solid #ececec;
-  padding-top: 76px;
-  padding-bottom: 112px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .button-list_wrapper {
