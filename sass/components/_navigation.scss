@@ -7,6 +7,17 @@
   color: var(--accent-color);
 }
 
+.navigation__menu {
+  display: flex;
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+    text-align: center;
+    .navigation__item:not(:last-child) {
+      padding-bottom: 40px;
+    }
+  }
+}
+
 .navigation__list-link {
   display: flex;
   position: relative;
@@ -16,8 +27,8 @@
   letter-spacing: 0.02em;
   text-decoration: none;
   color: var(--secondary-color);
-  padding-top: 32px;
-  padding-bottom: 32px;
+  // padding-top: 20px;
+  padding-bottom: 8px;
   transition: 300ms;
   .navigation__menu &.current {
     color: var(--accent-color);
@@ -28,7 +39,7 @@
     display: block;
     left: 0;
     bottom: 0;
-    width: 100%;
+    width: 51px;
     height: 4px;
     background-color: var(--accent-color);
     border-radius: 2px;

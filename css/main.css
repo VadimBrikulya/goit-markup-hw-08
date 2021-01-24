@@ -64,8 +64,17 @@ img {
   width: 100%;
 }
 
+.menu-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .menu-container.is-open {
   display: block;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 @media screen and (max-width: 767px) {
@@ -83,16 +92,20 @@ img {
   }
 }
 
-.nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+@media screen and (max-width: 767px) {
+  .nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
 }
 
 .menu-button {
@@ -124,7 +137,7 @@ img {
 }
 
 @media screen and (min-width: 768px) {
-  .menu-container {
+  .nav {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -431,6 +444,25 @@ img {
   color: var(--accent-color);
 }
 
+.navigation__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media screen and (max-width: 767px) {
+  .navigation__menu {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+  .navigation__menu .navigation__item:not(:last-child) {
+    padding-bottom: 40px;
+  }
+}
+
 .navigation__list-link {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -442,8 +474,7 @@ img {
   letter-spacing: 0.02em;
   text-decoration: none;
   color: var(--secondary-color);
-  padding-top: 32px;
-  padding-bottom: 32px;
+  padding-bottom: 8px;
   -webkit-transition: 300ms;
   transition: 300ms;
 }
@@ -458,7 +489,7 @@ img {
   display: block;
   left: 0;
   bottom: 0;
-  width: 100%;
+  width: 51px;
   height: 4px;
   background-color: var(--accent-color);
   border-radius: 2px;
@@ -1426,18 +1457,12 @@ img {
 }
 
 .header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  border-bottom: 1px solid #ececec;
   position: relative;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 
 @media screen and (max-width: 767px) {
   .header__address {
-    outline: 1px solid red;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;

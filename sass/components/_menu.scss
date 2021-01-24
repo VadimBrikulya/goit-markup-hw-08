@@ -1,9 +1,9 @@
 .menu-container {
-  // display: flex;
+  display: flex;
 
   &.is-open {
     display: block;
-    //
+    justify-content: center;
   }
   @media screen and (max-width: 767px) {
     // display: none;
@@ -19,12 +19,15 @@
     z-index: 999999;
   }
 }
-
 .nav {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @media screen and (max-width: 767px) {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
 }
+
 .menu-button {
   display: flex;
   margin: 0;
@@ -45,7 +48,7 @@
   display: none;
 }
 @media screen and (min-width: 768px) {
-  .menu-container {
+  .nav {
     display: flex;
   }
 }

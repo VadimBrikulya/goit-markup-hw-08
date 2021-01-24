@@ -1,12 +1,12 @@
 .header {
-  display: flex;
+  // display: flex;
+  border-bottom: 1px solid #ececec;
   position: relative;
-  justify-content: space-between;
+  // justify-content: space-between;
 }
 .header__address {
   @media screen and (max-width: 767px) {
-    outline: 1px solid red;
-
+    // outline: 1px solid red;
     justify-content: center;
   }
 }
