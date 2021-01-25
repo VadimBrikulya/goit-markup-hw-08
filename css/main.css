@@ -217,7 +217,7 @@ img {
           transform: translate(-50%, -50%);
   max-width: 450px;
   width: 100%;
-  min-height: 581px;
+  min-height: 609px;
   margin-left: auto;
   margin-right: auto;
   padding-top: 40px;
@@ -368,15 +368,6 @@ img {
   font-size: 14px;
   line-height: 1.714;
   letter-spacing: 0.03em;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   letter-spacing: 0.01em;
   color: #757575;
 }
@@ -483,7 +474,7 @@ img {
     padding-left: 159px;
   }
   .modal {
-    min-width: 528px;
+    min-width: 450px;
   }
 }
 
