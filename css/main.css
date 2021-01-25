@@ -161,6 +161,12 @@ img {
   margin-bottom: 10px;
 }
 
+@media screen and (min-width: 768px) {
+  .desription-item {
+    text-align: left;
+  }
+}
+
 .modal-btn {
   display: inline-block;
   min-width: 200px;
@@ -218,8 +224,8 @@ img {
   max-width: 450px;
   width: 100%;
   min-height: 609px;
-  margin-left: 15px;
-  margin-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
   padding-top: 40px;
   padding-right: 40px;
   padding-left: 40px;
@@ -836,6 +842,9 @@ img {
   .title-list .item {
     width: calc((100% - 4 * 30px) / 4);
   }
+  .title-list .item:not(:last-child) {
+    margin-bottom: 0px;
+  }
 }
 
 @media screen and (max-width: 1199px) {
@@ -853,7 +862,7 @@ img {
       -ms-flex-pack: center;
           justify-content: center;
   margin-top: 50px;
-  padding-bottom: 94px;
+  padding-bottom: 50px;
 }
 
 .about-us-list .about-us-img:not(:nth-child(3n)) {
@@ -888,6 +897,18 @@ img {
   text-transform: uppercase;
   background: rgba(47, 48, 58, 0.8);
   color: #ffffff;
+}
+
+@media screen and (min-width: 1200px) {
+  .about-us {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-top: 94px;
+  }
 }
 
 .our-team {
@@ -1491,6 +1512,7 @@ img {
 @media screen and (min-width: 1200px) {
   .hero {
     padding-top: 200px;
+    padding-bottom: 200px;
     background-image: -webkit-gradient(linear, left top, left bottom, from(var(--gradient-color)), to(var(--gradient-color))), url("../images/hero/hero_desk-1x.jpg");
     background-image: linear-gradient(var(--gradient-color), var(--gradient-color)), url("../images/hero/hero_desk-1x.jpg");
     background-repeat: no-repeat;

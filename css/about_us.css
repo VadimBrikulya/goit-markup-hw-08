@@ -13,7 +13,7 @@
       -ms-flex-pack: center;
           justify-content: center;
   margin-top: 50px;
-  padding-bottom: 94px;
+  padding-bottom: 50px;
 }
 
 .about-us-list .about-us-img:not(:nth-child(3n)) {
@@ -48,5 +48,17 @@
   text-transform: uppercase;
   background: rgba(47, 48, 58, 0.8);
   color: #ffffff;
+}
+
+@media screen and (min-width: 1200px) {
+  .about-us {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-top: 94px;
+  }
 }
 /*# sourceMappingURL=about_us.css.map */
