@@ -210,13 +210,13 @@ img {
 }
 
 .modal {
-  outline: 1px solid red;
   position: absolute;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  min-width: 450px;
+  max-width: 450px;
+  width: 100%;
   min-height: 581px;
   margin-left: auto;
   margin-right: auto;
@@ -481,6 +481,9 @@ img {
   .backdrop {
     padding-right: 159px;
     padding-left: 159px;
+  }
+  .modal {
+    min-width: 528px;
   }
 }
 
