@@ -66,6 +66,7 @@
   line-height: 2;
   letter-spacing: 0.06em;
   color: #212121;
+  margin-bottom: 4px;
 }
 
 .size-word {
@@ -92,11 +93,11 @@
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .bg-text {
-    padding-bottom: 56px;
-  }
-}
+// @media screen and (min-width: 768px) and (max-width: 1199px) {
+//   .bg-text {
+//     padding-bottom: 56px;
+//   }
+// }
 
 @media screen and (min-width: 1200px) {
   .indent {

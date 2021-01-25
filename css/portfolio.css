@@ -834,6 +834,15 @@ img {
   }
 }
 
+.description-portfolio {
+  font-family: var(--accent-color);
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.03em;
+  color: #757575;
+  font-style: normal;
+}
+
 .hero {
   margin-left: auto;
   margin-right: auto;
@@ -1047,6 +1056,7 @@ img {
   line-height: 2;
   letter-spacing: 0.06em;
   color: #212121;
+  margin-bottom: 4px;
 }
 
 .size-word {
@@ -1072,12 +1082,6 @@ img {
     -ms-flex-preferred-size: calc((100% - 2 * 30px) / 2);
         flex-basis: calc((100% - 2 * 30px) / 2);
     margin: 15px;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .bg-text {
-    padding-bottom: 56px;
   }
 }
 

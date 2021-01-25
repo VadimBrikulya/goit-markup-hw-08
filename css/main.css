@@ -789,7 +789,7 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: 94px;
+  margin-top: 50px;
   padding-bottom: 94px;
 }
 
@@ -798,7 +798,6 @@ img {
 }
 
 .about-us-title {
-  margin-bottom: 50px;
   font-weight: bold;
   font-size: 36px;
   line-height: 1.166;

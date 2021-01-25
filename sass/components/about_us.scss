@@ -9,7 +9,7 @@
 .about-us-list {
   display: flex;
   justify-content: center;
-  margin-top: 94px;
+  margin-top: 50px;
   padding-bottom: 94px;
   & .about-us-img:not(:nth-child(3n)) {
     margin-right: 30px;
@@ -17,7 +17,7 @@
 }
 
 .about-us-title {
-  margin-bottom: 50px;
+  // margin-bottom: 50px;
   font-weight: bold;
   font-size: 36px;
   line-height: 1.166;
