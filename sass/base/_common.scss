@@ -8,9 +8,6 @@ html {
   box-sizing: inherit;
 }
 
-.list {
-  list-style: none;
-}
 body {
   font-family: var(--main-font);
 }
@@ -19,7 +16,8 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+p {
   margin: 0;
 }
 
@@ -29,11 +27,10 @@ ol {
   margin: 0;
 }
 
-p {
-  margin: 0;
+a {
+  text-decoration: none;
 }
 
-img {
-  display: inline-block;
-  width: 100%;
+.list {
+  list-style: none;
 }
