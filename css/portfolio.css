@@ -32,10 +32,6 @@ html {
           box-sizing: inherit;
 }
 
-.list {
-  list-style: none;
-}
-
 body {
   font-family: var(--main-font);
 }
@@ -45,7 +41,8 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+p {
   margin: 0;
 }
 
@@ -55,13 +52,12 @@ ol {
   margin: 0;
 }
 
-p {
-  margin: 0;
+a {
+  text-decoration: none;
 }
 
-img {
-  display: inline-block;
-  width: 100%;
+.list {
+  list-style: none;
 }
 
 .menu-container.is-open {
@@ -230,8 +226,6 @@ img {
     letter-spacing: 0.02em;
     text-decoration: none;
     color: var(--secondary-color);
-    padding-top: 32px;
-    padding-bottom: 32px;
     -webkit-transition: 300ms;
     transition: 300ms;
   }
@@ -278,8 +272,6 @@ img {
     letter-spacing: 0.02em;
     text-decoration: none;
     color: var(--secondary-color);
-    padding-top: 32px;
-    padding-bottom: 32px;
     -webkit-transition: 300ms;
     transition: 300ms;
   }
@@ -635,6 +627,7 @@ img {
   color: #000000;
   padding-top: 16px;
   padding-bottom: 16px;
+  margin-right: auto;
 }
 
 .header__word-web {
@@ -848,8 +841,8 @@ img {
   margin-right: auto;
   padding-top: 118px;
   padding-bottom: 118px;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(var(--gradient-color)), to(var(--gradient-color))), url("../images/hero/hero-1x.jpg");
-  background-image: linear-gradient(var(--gradient-color), var(--gradient-color)), url("../images/hero/hero-1x.jpg");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(var(--gradient-color)), to(var(--gradient-color))), url("/images/kuhnya.jpg");
+  background-image: linear-gradient(var(--gradient-color), var(--gradient-color)), url("/images/kuhnya.jpg");
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
