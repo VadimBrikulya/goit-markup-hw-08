@@ -226,10 +226,12 @@ a {
     letter-spacing: 0.02em;
     text-decoration: none;
     color: var(--secondary-color);
+    padding-top: 32px;
+    padding-bottom: 32px;
     -webkit-transition: 300ms;
     transition: 300ms;
   }
-  js .navigation__menu .navigation__list-link.current {
+  .navigation__menu .navigation__list-link.current {
     color: var(--accent-color);
   }
   .navigation__menu .navigation__list-link.current::after {
@@ -841,8 +843,8 @@ a {
   margin-right: auto;
   padding-top: 118px;
   padding-bottom: 118px;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(var(--gradient-color)), to(var(--gradient-color))), url("/images/kuhnya.jpg");
-  background-image: linear-gradient(var(--gradient-color), var(--gradient-color)), url("/images/kuhnya.jpg");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(var(--gradient-color)), to(var(--gradient-color))), url("../images/hero/hero-1x.jpg");
+  background-image: linear-gradient(var(--gradient-color), var(--gradient-color)), url("../images/hero/hero-1x.jpg");
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
@@ -920,8 +922,14 @@ a {
 }
 
 .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   border-bottom: 1px solid #ececec;
   position: relative;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 @media screen and (max-width: 767px) {
@@ -964,6 +972,9 @@ a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   .header__address {
     padding-bottom: 32px;
@@ -977,10 +988,23 @@ a {
 
 .contact-form {
   background-color: #2f303a;
+  padding-bottom: 60px;
   padding-top: 60px;
 }
 
+.container-portfolio {
+  max-width: 1170px;
+  padding: 5px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .portfolio-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin-left: -30px;
   margin-top: -30px;
 }
@@ -1079,6 +1103,12 @@ a {
     -ms-flex-preferred-size: calc((100% - 2 * 30px) / 2);
         flex-basis: calc((100% - 2 * 30px) / 2);
     margin: 15px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .bg-text {
+    padding-bottom: 56px;
   }
 }
 

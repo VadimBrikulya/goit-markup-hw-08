@@ -1,13 +1,13 @@
-// .container-portfolio {
-//   max-width: 1170px;
-//   padding: 5px;
-//   margin-left: auto;
-//   margin-right: auto;
-// }
+.container-portfolio {
+  max-width: 1170px;
+  padding: 5px;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 .portfolio-list {
-  // display: flex;
-  // flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
   margin-left: -30px;
   margin-top: -30px;
   & .item-chart:focus,
@@ -93,11 +93,11 @@
   }
 }
 
-// @media screen and (min-width: 768px) and (max-width: 1199px) {
-//   .bg-text {
-//     padding-bottom: 56px;
-//   }
-// }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .bg-text {
+    padding-bottom: 56px;
+  }
+}
 
 @media screen and (min-width: 1200px) {
   .indent {

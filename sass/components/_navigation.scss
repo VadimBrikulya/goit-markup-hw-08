@@ -76,10 +76,10 @@
     letter-spacing: 0.02em;
     text-decoration: none;
     color: var(--secondary-color);
-    // padding-top: 32px;
-    // padding-bottom: 32px;
+    padding-top: 32px;
+    padding-bottom: 32px;
     transition: 300ms;
-    js .navigation__menu &.current {
+    .navigation__menu &.current {
       color: var(--accent-color);
     }
     .navigation__menu &.current::after {
